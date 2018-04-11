@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>奏世界</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="preloader-wrapper">
+	<div class="preloader">
+		<img src="//oss.acgme.cn/img/ancho_r_v1.png" style="width: 50%;"><br/>
+	</div>
+</div>
+<div id="particles-js"></div>
+<nav class="navbar-s">
+	<a class="navbar-brand-s" href="#">奏世界</a>
+	<ul class="navbar-nav-s">
+		<li class="navbar-item-s">
+			<a class="navbar-link-s" href="https://blog.acgme.cn/">奏世界·博客</a>
+			</li>
+		<li class="navbar-item-s">
+			<a class="navbar-link-s" href="http://mail.acgme.cn/">奏世界·邮箱</a>
+		</li>
+		<li class="navbar-item-s">
+			<a class="navbar-link-s" href="http://study.acgme.cn/">奏世界·学习</a>
+		</li>
+		<li class="navbar-item-s">
+			<a class="navbar-link-s" href="https://live.bilibili.com/30309">直播间</a>
+		</li>
+		<li class="navbar-item-s">
+			<a class="navbar-link-s" href="http://www.g41.moe/">G41计划</a>
+		</li>
+		<li class="navbar-item-s">
+			<a class="navbar-link-s" href="http://nav.g41.moe/">宅导航</a>
+		</li>
+	</ul>
+	<a class="navbar-icp-s" href="http://www.miitbeian.gov.cn/" target="_blank">鄂ICP备15011876号</a>
+</nav>
+<div class="content-s">
+	<p class="content-article-s" style="display: none;" id="content">
+		　　机会，掌握于自己之手，需要靠自己掌舵。<br>
+		　　当我们在做自己所想之事时，必须全力以赴，尽己所能，这是机会；而当我们在做自己所恶之事时（但又必须去面对），更应竭尽全力，至臻完美，这是锻炼。学习和生活就是如此，只有我们完成了所有我们想做的事情和解决了所有我们必须面对的事情时，我们的人生才算是完整的。<br>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　—— 奏
+	</p>
+</div>
+<div class="share-s">
+	<p>
+		本页面源码允许任何人使用，不需经过授权。<br/>
+		Live 2D内容由 <a class="github" href="https://github.com/galnetwen/Live2D"> GalNetWen </a>提供
+	</p>
+</div>
+<div class="music-s">
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=58741787&auto=0&height=90"></iframe>
+</div>
+<div id="landlord">
+	<div style="display: none;">要看看 {text} 么？Hentai！</div>
+	<div class="message" style="opacity:0"></div>
+	<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+</div>
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="./js/particles.min.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+<script type="text/javascript" type="text/javascript">
+	$(document).ready(function($) {
+		var Body = $('body');
+		Body.addClass('preloader-site');
+	});
+	$(window).load(function() {
+		$('.preloader-wrapper').fadeOut();
+		$('body').removeClass('preloader-site');
+	});
+</script>
+<script type="text/javascript">
+	var message_Path = '//oss.acgme.cn/live2d/'
+	var home_Path = "//oss.acgme.cn/";
+</script>
+<script type="text/javascript" src="./js/live2d.js"></script>
+<script type="text/javascript" src="./js/message.js"></script>
+<script type="text/javascript">
+	model = new Array();
+	model[0] = "//oss.acgme.cn/live2d/model/tia/model.json";
+	model[1] = "//oss.acgme.cn/live2d/model/pio/model1.json";
+	model[2] = "//oss.acgme.cn/live2d/model/pio/model2.json";
+	model[3] = "//oss.acgme.cn/live2d/model/pio/model3.json";
+	num = Math.floor(Math.random() * 4);
+	loadlive2d("live2d", model[num]);
+</script>
+<script type="text/javascript" src="//cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+<script type="text/javascript">
+	$youziku.load("body", "79828ef09ff84b95a863f43f4a6607d7", "TSSunOld");
+	$youziku.draw();
+</script>
+<script type="text/javascript" src="./js/word.js"></script>
+</body>
+</html>
